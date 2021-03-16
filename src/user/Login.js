@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Login.scss";
 
 class Login extends Component {
   constructor(props) {
@@ -16,12 +17,12 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-        <div>
-          <input type="text" />
+      <div className="login">
+        <div className="id">
+          <input type="text" placeholder="아이디" />
         </div>
-        <div>
-          <input type="password" />
+        <div className="password">
+          <input type="password" placeholder="비밀번호" />
         </div>
         <div>
           <button onClick={this.handleLogin}>Login</button>
