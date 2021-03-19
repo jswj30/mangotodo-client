@@ -17,15 +17,18 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="login">
-        <div className="id">
-          <input type="text" placeholder="아이디" />
-        </div>
-        <div className="password">
-          <input type="password" placeholder="비밀번호" />
-        </div>
-        <div>
-          <button onClick={this.handleLogin}>Login</button>
+      <div className="bg">
+        <div className="login">
+          <h1>MangoTodo</h1>
+          <div>
+            <input type="text" placeholder="아이디" />
+          </div>
+          <div>
+            <input type="password" placeholder="비밀번호" />
+          </div>
+          <div>
+            <button onClick={this.handleLogin}>Login</button>
+          </div>
           {this.state.isLogin && <h1>버튼을 눌렀습니다.</h1>}
         </div>
       </div>
