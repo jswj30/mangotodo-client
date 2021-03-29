@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import { Route } from "react-router-dom";
 import Login from "./user/Login";
+import Main from "./todo/Main";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Login />
+        <Route path="/" component={Login} exact={true} />
+        <Route path="/main" component={Main} />
       </div>
     );
   }
